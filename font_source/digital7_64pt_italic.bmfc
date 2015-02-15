@@ -1,0 +1,55 @@
+# AngelCode Bitmap Font Generator configuration file
+fileVersion=1
+
+# font settings
+fontName=Digital-7 Italic
+fontFile=
+charSet=0
+fontSize=64
+aa=1
+scaleH=100
+useSmoothing=1
+isBold=0
+isItalic=0
+useUnicode=1
+disableBoxChars=1
+outputInvalidCharGlyph=0
+dontIncludeKerningPairs=1
+useHinting=1
+renderFromOutline=1
+useClearType=1
+
+# character alignment
+paddingDown=0
+paddingUp=0
+paddingRight=1
+paddingLeft=0
+spacingHoriz=1
+spacingVert=1
+useFixedHeight=0
+forceZero=0
+
+# output file
+outWidth=256
+outHeight=198
+outBitDepth=8
+fontDescFormat=0
+fourChnlPacked=0
+textureFormat=png
+textureCompression=0
+alphaChnl=0
+redChnl=3
+greenChnl=3
+blueChnl=3
+invA=1
+invR=0
+invG=0
+invB=0
+
+# outline
+outlineThickness=0
+
+# selected chars
+chars=42-58
+
+# imported icon images
