@@ -1,0 +1,9 @@
+
+#include "font_type.h"
+
+#ifndef {{hfile_upper}}_H_
+#define {{hfile_upper}}_H_
+
+extern const font_t {{font_name}};
+
+#endif // {{hfile_upper}}_H_

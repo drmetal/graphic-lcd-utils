@@ -1,0 +1,14 @@
+
+#include <stdint.h>
+
+#ifndef FONT_TYPE_H_
+#define FONT_TYPE_H_
+
+{% for type in font_types -%}
+typedef struct {
+    {% for member, member_type in font_types[type]["params"].items() -%}
+     {{member_type}} {{member}};
+    {% endfor %}
+} {{font_types[type]["name"]}}_t;
+{% endfor %}
+#endif // FONT_TYPE_H_

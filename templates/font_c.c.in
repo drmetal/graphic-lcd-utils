@@ -1,0 +1,23 @@
+
+#include "{{font_name}}.h"
+
+{% for character, data in character_data.items() -%}
+static const uint8_t {{font_name}}_{{character}}_{{chardata_suffix}}[{{data|length}}] = {
+    {% for point in data -%} {{point}}, {% endfor %}
+};
+{% endfor %}
+
+{% for character, members in characters.items() -%}
+static const character_t {{font_name}}_{{character}} = {
+    {% for member, value in members.items() -%} .{{member}}={{value}}, {% endfor %}
+};
+{% endfor %}
+
+static const character_t* {{font_name}}_{{charset_suffix}}[] = {
+{% for character in characters -%} &{{font_name}}_{{character}}, {% endfor %}
+};
+
+const font_t {{font_name}} = {
+    {% for member, value in font_info.items() -%} .{{member}}={{value}}, {% endfor %}
+};
+
