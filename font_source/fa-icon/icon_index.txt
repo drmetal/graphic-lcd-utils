@@ -1,0 +1,33 @@
+0 power
+1 cog
+2 home
+3 trash
+4 lock
+6 unlock
+6 cross
+7 circle-plus
+8 refresh
+9 big-tick
+10 left-arrow
+11 right arrow
+12 circle question
+13 image
+14 filled star
+15 bust
+16 pencil-pad
+17 bargraph
+18 calendar
+19 4 sq
+20 9 sq
+21 note-lines
+22 search
+23 filled speech bubbble
+24 tools
+25 circle-up
+26 circle-down
+27 clock
+28 file
+29 download
+30 music note
+31 reload
+32 small tick

@@ -236,7 +236,7 @@ class Build_Font_Definition_C(Builder):
         # populate value of c pointer to the character set
         # these are additional members (not derived from the .fnt file)
         fd.descriptor["font"]["info"][self.char_set_member_name] = "{0}_{1}".format(fd.name, self.char_set_member_name)
-        fd.descriptor["font"]["info"][self.base_id_member_name] = fd.descriptor["characters"].items()[0][1]["id"]
+        fd.descriptor["font"]["info"][self.base_id_member_name] = tuple(fd.descriptor["characters"].items())[0][1]["id"]
 
         # filter off all unwanted font members
         font_members = {}
